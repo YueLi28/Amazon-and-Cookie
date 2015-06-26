@@ -1,0 +1,83 @@
+\section{Privacy Information Identification}
+
+From our measurement study, we have studies 3 dimensions of user shopping preference -- 1)What to buy 2)When to buy 3)Price.
+
+From our study of shopping preference difference, it has been clear that different people have different shopping preference. One question is: Can we identify user personal information from the their Wish Lists. That is to say, Items added in Wish Lists have potential to leak personal information. We explore the possibility using machine learning to help identify user personal information from their Wish Lists.
+\subsection{Information in list-description}
+To successfully identify the user personal information. One challenge we face is how to obtain the ground truth of the user. There are several possible ways to find out the result. First, Services such as yahoo people search can be used as ground truth at a reasonable monetary cost. We can input the name and location information in the search engine to identify a user. Second, similar to the first approach, we can search people in online social networks such as Facebook or Twitter. Third, we can use the user list-description as the ground truth. Users sometimes expose personal information in their list-description and we can take advantage of it.
+
+The first approach does not really provide an accurate result since the information given is not rigorous enough to identify the exact person. If wrongly identified, it has much negative impact on the identification process, which is by itself not very accurate already. The second approach is similar to the first one. It is even more inaccurate. Due to the unreliable nature of the first 2 approaches, we took the third approach. Besides the accuracy, collecting ground truth from list-descriptions have the benefit of not depending on external data source. Recall that we collect items for only users with list-descriptions. All our 20,099 users collected have list-descriptions. Note that there are also limitations for the third approach. For example, the list-description is plain-text, making it hard to process and analyze. Secondly, there may not always be useful information in list-descriptions.
+
+We assume that everybody is telling the truth in the list-descriptions. If somebody is lying, we do not have a way to identify it. However, it is meaningless for a user to lie in list-descriptions since lying there will not bring them any benefit. If a user concerns his/her privacy, he/she can simply leave the list-description blank instead of lying.
+
+Among the users who have list-descriptions, 233,595 words are found (44,387 punctuations are excluded). The average number of words in list-descriptions is 11.6. We can see that the list-descriptions are not long -- basically the length of a normal sentence. While there are scattered long list-description (the longest list-description has 682 words), more than half of the list-descriptions have length less than or equal to 6 (10,592 out of 20,099). And only 29.9\% of the list-descriptions have over 10 words. Considering that there are even less words that carry information, One possible consequence is that there might not be enough information in one list-description to identify personal information.
+
+Next we retrieve information from list-descriptions. 
+
+One way to retrieve information is to search the keyword. If a keyword appears in one user's self-description, there is high probability that the user is related to the keyword. For example, if a keyword "college" appears in the self-description, the user is likely to have a college degree. 
+
+We used Stanford Part-of-Speech (POS) tagger \cite{toutanova2003feature} to tag the user list-descriptions to retrieve useful information. There are a number of tags a word can belong to. However, we only focus on noun-family words (with tag NN, NNS, NNP, and NNPS in Stanford POS tagger). The reason behind is that most of the nouns carry certain amount of information while most of other words do not carry useful information. 
+
+There are totally 95,359 out of all 233,595 words (around 40.8\%) belonging to the noun family. The ratio of nouns is quite large. The most frequent ones are listed in Table~\ref{tb:freq}
+
+\begin{table}[!ht]
+\centering
+\caption{Frequent Nouns IN list-descriptions}
+\label{tb:freq}
+\begin{tabular}{lll}
+ Rank & Item Type & frequency\\
+ 1 & s & 1498   \\
+ 2 & love & 1327   \\
+ 3 & m & 1314   \\
+ 4 & university & 1098   \\
+ 5 & music & 1095   \\
+ 6 & list & 1064   \\
+ 7 & books & 1001   \\
+ 8 & school & 659   \\
+ 9 & movies & 652   \\
+ 10 & t & 628  \\
+ 11 & games & 593  \\
+ 12 & things & 553   \\
+ 13 & college & 495  \\
+ 14 & stuff & 443  \\
+ 15 & work & 419   \\
+ 16 & fan & 411  \\
+ 17 & wish & 389  \\
+ 18 & video & 380  \\
+ 19 & history & 371  \\
+ 20 & photography & 353  \\
+\end{tabular}
+\end{table}
+
+From Table~\ref{tb:freq} We can see that except for meaningless single characters ("s" and "m" in this case), the noun family words carry some information of a user. The information involves hobbies (such as music, books, movies, etc) and education level (such as university, college). These words can be used as keywords in the information retrieval step. On the other hand, if we look into the verbs, we will find the most popular 20 verbs are "is",  "am",  "have",  "are",  "live",  "be",  "love",  "buy",  "want",  "enjoy",  "know",  "used",  "do",  "don",  "get",  "married",  "go",  "went",  "read",  "loves",  and "was". Except "married", the other words can not assist us to find any useful information about a user.
+\subsection{Information Identification}
+We do personal information identification on a subset of users who have more than 30 items in their wish lists in our dataset. We filter part of the users out because they do not have sufficient information in their Wish Lists. After the filtering, we have 13,464 users as our target users. We choose users with certain keywords in their list-descriptions in the user pool. We use the portion of different types of products,  in user wish lists as input to the classifier. Therefore we have an input vector of length of 50. We use SVM classifier to train and test the data. 80\% of our data is used as training data and the rest of 20\% of the data as testing data. The personal information identification process is binary, which means that we use only 2 classes in each identification cycle. The reasons for having only 2 classes. It is reasonable to have 2 classes in a classifier. We intend to answer questions like "Is he a professor?", "Does he have a university diploma" or "Does he like hiking?". A prediction of the answer is very helpful in identifying a user. We try 2 different types of personal information -- 1) gender 2)hobbies
+
+\subsection{gender}
+There are only 2 genders in general, it is natural to have only 2 classes. To save the training resource while maintaining high representation, we chose 389 males and 168 females as our dataset. We used the first 80\% person as the training set and the rest as the test set. The ground truth comes from the name of the users. We identify a user "male" if this user is using a male name in the profile. females are identified using a similar approach. As a result, the success rate to classify whether a given user is a male or female is around 84\%.
+We can see that the classifier works pretty well in the case of gender, which means that given only the Wish List information of a user, we can identify whether this user is male or female with pretty high certainty.
+
+\subsection{Hobbies}
+Afterwards, We use hobbies as examples, we choose all pairs of hobbies in the top 20 nouns. 7 keywords are selected. They are -"music", "books", "movies", "games", "video", "history", and "photography" and try to differentiate users between any pair of them. The success rate between any pair of them is shown in Table~\ref{tb:hobby}
+
+\begin{table}[!ht]
+\centering
+\caption{Success Rate of Hobbies}
+\label{tb:hobby}
+\begin{adjustbox}{max width=.5\textwidth}
+\begin{tabular}{llllllll}
+            & music & books & movies & games & video & history & photography \\
+music       & NA    & 0.506 & 0.653  & 0.713 & 0.691 & 0.772   & 0.743       \\
+books       & 0.506 & NA    & 0.631  & 0.667 & 0.647 & 0.526   & 0.807       \\
+movies      & 0.653 & 0.631 & NA     & 0.617 & 0.617 & 0.762   & 0.662       \\
+games       & 0.713 & 0.667 & 0.617  & NA    & 0.521 & 0.776   & 0.703       \\
+video       & 0.691 & 0.647 & 0.617  & 0.521 & NA    & 0.777   & 0.700       \\
+history     & 0.772 & 0.526 & 0.762  & 0.776 & 0.777 & NA      & 0.680       \\
+photography & 0.743 & 0.807 & 0.662  & 0.703 & 0.700 & 0.680   & NA         
+\end{tabular}
+\end{adjustbox}
+\end{table}
+
+We can see that the success rate can be high (80.7\%) or even no better than guessing (50.6\%). Such big variance may be due to the relativity of different hobbies. When 2 hobbies are not much related, we can find the success rate be usually higher than 70\%. For example, "history" has very limited relativity to other hobbies except for "books". We can see from the table that history has higher success rate except for the "books" entry because history relates to books pretty much. It is difficult to have further increase in success rate because people often have more than 1 hobbies. Therefore one person may belong to both group, which will have quite negative impact on the result.
+
+We conclude that wish lists are helpful to identify a user's hobby. However, depending solely on wish lists are not a very reliable option to identify user hobbies. 

@@ -1,0 +1,70 @@
+\begin{thebibliography}{10}
+
+\bibitem{fnames}
+1000 most common female names in the u.s.
+\newblock http://names.mongabay.com/female\_names.htm.
+
+\bibitem{mnames}
+300 most common male names in the u.s.
+\newblock http://names.mongabay.com/male\_names.htm.
+
+\bibitem{searcheng}
+Amazon wish list search engine.
+\newblock http://www.amazon.com/gp/registry/search.
+
+\bibitem{east}
+East coast of the united states.
+\newblock http://en.wikipedia.org/wiki/East\_Coast\_of\_the\_United\_States.
+
+\bibitem{west}
+West coast of the united states.
+\newblock http://en.wikipedia.org/wiki/West\_Coast\_of\_the\_United\_States.
+
+\bibitem{dave2003mining}
+K.~Dave, S.~Lawrence, and D.~M. Pennock.
+\newblock Mining the peanut gallery: Opinion extraction and semantic
+  classification of product reviews.
+\newblock In {\em Proceedings of the 12th international conference on World
+  Wide Web}, pages 519--528. ACM, 2003.
+
+\bibitem{de2001mining}
+O.~De~Vel, A.~Anderson, M.~Corney, and G.~Mohay.
+\newblock Mining e-mail content for author identification forensics.
+\newblock {\em ACM Sigmod Record}, 30(4):55--64, 2001.
+
+\bibitem{frankowski2006you}
+D.~Frankowski, D.~Cosley, S.~Sen, L.~Terveen, and J.~Riedl.
+\newblock You are what you say: privacy risks of public mentions.
+\newblock In {\em Proceedings of the 29th annual international ACM SIGIR
+  conference on Research and development in information retrieval}, pages
+  565--572. ACM, 2006.
+
+\bibitem{kraft2007mashing}
+M.~A. Kraft.
+\newblock Mashing up the internet.
+\newblock {\em Medical Reference Services Quarterly}, 26(S1):191--207, 2007.
+
+\bibitem{Lee:2010:USS:1835449.1835522}
+K.~Lee, J.~Caverlee, and S.~Webb.
+\newblock Uncovering social spammers: Social honeypots + machine learning.
+\newblock In {\em Proceedings of the 33rd International ACM SIGIR Conference on
+  Research and Development in Information Retrieval}, SIGIR '10, pages
+  435--442, New York, NY, USA, 2010. ACM.
+
+\bibitem{pang2002thumbs}
+B.~Pang, L.~Lee, and S.~Vaithyanathan.
+\newblock Thumbs up: sentiment classification using machine learning
+  techniques.
+\newblock In {\em Proceedings of the ACL-02 conference on Empirical methods in
+  natural language processing-Volume 10}, pages 79--86. Association for
+  Computational Linguistics, 2002.
+
+\bibitem{toutanova2003feature}
+K.~Toutanova, D.~Klein, C.~D. Manning, and Y.~Singer.
+\newblock Feature-rich part-of-speech tagging with a cyclic dependency network.
+\newblock In {\em Proceedings of the 2003 Conference of the North American
+  Chapter of the Association for Computational Linguistics on Human Language
+  Technology-Volume 1}, pages 173--180. Association for Computational
+  Linguistics, 2003.
+
+\end{thebibliography}
