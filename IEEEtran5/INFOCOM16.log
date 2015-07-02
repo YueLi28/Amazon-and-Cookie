@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  2 JUL 2015 09:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  2 JUL 2015 10:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -403,11 +403,7 @@ Package: footnote 1997/01/28 1.13 Save footnotes around boxes
 \fn@notes=\box34
 \fn@width=\dimen160
 )
-(./INFOCOM16.aux
-
-LaTeX Warning: Label `fig:week' multiply defined.
-
-)
+(./INFOCOM16.aux)
 \openout1 = `INFOCOM16.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
@@ -427,7 +423,8 @@ Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
 Package caption Info: threeparttable package is loaded.
 Package caption Info: End \AtBeginDocument code.
- (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+
+(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count129
 \scratchdimen=\dimen161
@@ -688,14 +685,11 @@ Before submitting the final camera ready copy, remember to:
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
  6252 strings out of 493117
  96718 string characters out of 6135433
- 191050 words of memory out of 5000000
+ 191019 words of memory out of 5000000
  9548 multiletter control sequences out of 15000+600000
  40252 words of font info for 78 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -709,7 +703,7 @@ e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2
 dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2014/texmf-dist/font
 s/type1/urw/times/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/ur
 w/times/utmri8a.pfb>
-Output written on INFOCOM16.pdf (9 pages, 651127 bytes).
+Output written on INFOCOM16.pdf (9 pages, 651223 bytes).
 PDF statistics:
  90 PDF objects out of 1000 (max. 8388607)
  48 compressed objects within 1 object stream
