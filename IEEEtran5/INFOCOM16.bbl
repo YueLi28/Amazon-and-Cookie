@@ -20,6 +20,11 @@ East coast of the united states.
 West coast of the united states.
 \newblock http://en.wikipedia.org/wiki/West\_Coast\_of\_the\_United\_States.
 
+\bibitem{menvswomen}
+CATALYST.
+\newblock Women's earnings and income, 2015.
+\newblock http://www.catalyst.org/knowledge/womens-earnings-and-income.
+
 \bibitem{dave2003mining}
 K.~Dave, S.~Lawrence, and D.~M. Pennock.
 \newblock Mining the peanut gallery: Opinion extraction and semantic

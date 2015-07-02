@@ -42,9 +42,26 @@ Then we further investigate the items in the Wishlist. We directly visit the Wis
 Finally We retrieve detailed information for each item. We visit all the item URLs and download the product pages. One example of the product web pages is shown in Figure~\ref{itempage}. In a page like this, the item type and the item price (In red box) can be easily extracted. However, there may not always be only one price for an item. For example, for the same item, there can be prices from different retailers. There are also differences between new ones and used ones. We record only the price that the wishlist owner chose (Wishlists remember which version of the items are selected in most cases). In cases which the user does not choose a price, we record the lowest prices that a user needs to pay to get an item. In these rare case we believe it is reasonable to choose the lowest price because it is natural to assume that people prefer to pay less to purchase an item. Note that we cannot always find the price for an item. There are multiple reasons -- (1) The item is removed from Amazon so there is no web page for it. However, it still stays in user Wishlists. (2) The item is no longer in stock, the price shown will be ``Currently unavailable" (3) Web failures and anti-crawler mechanisms.
 
 \subsection{Data Overview}
-We searched the top 600 common names (300 males \cite{mnames} and 300 females \cite{fnames} to harvest user profiles. Eventually we collected 1,233,095 unique users.Their profile information and wishlist links are stored in our database. However, collecting Wishlists of all the users is very time-consuming (Consider that one Amazon product Page usually has over 10 thousand lines of code, which is around 300KB data). Therefore we collect only part of the user profile pool that is large enough to conduct sound measurement. As we are also interested in personal information of a user, we collect the wishlists and items of users who potentially have input personal information -- users with list-description. To this end, we collected 30,057 complete user, together with all the items and wishlists. In total we collected 76,923 wishlists and 5,710,674 items, among which 2,248,142 are unique. The size of the data is approximately 1.6GB. 
+We searched the top 600 common names (300 males \cite{mnames} and 300 females \cite{fnames} to harvest user profiles. Eventually we collected 1,233,095 unique users.Their profile information and wishlist links are stored in our database. However, collecting Wishlists of all the users is very time-consuming (Consider that one Amazon product Page usually has over 10 thousand lines of code, which is around 300KB data). Therefore we collect only part of the user profile pool that is large enough to conduct sound measurement. As we are also interested in personal information of a user, we collect the wishlists and items of users who potentially have input personal information -- users with list-description. To this end, we collected 30,057 complete user, together with all the items and wishlists. In total we collected 76,923 wishlists and 5,710,674 items, among which 2,248,142 are unique. The size of the data is approximately 1.6GB. "MENTION MALE AND FEMALE NUMBER". 
 
-\subsection{Anti-crawler}
-During the process of data collection. We found that Amazon anti-crawler mechanism keeps intensifying. In the year of 2014 there are few rejected requests. However, as in May 2015 we found that Amazon would reject over 95\% of the requests. If the user agent of the crawler is python, Amazon would directly return error code 503 service unavailable. If the user agent is camouflaged as a browser, Amazon keeps prompting Captcha. In either way we cannot circumvent the anti-crawler mechanism. Consequently, part of the item data cannot be collected efficiently anymore. However, missing data does not invalidate our result since we analyze data in a macro scope to analyze the market pattern instead of analyzing individual user behavior. 
 
+\subsection{Personal Information}
+Although we did not collect wishlists for all the recorded users. We can still use their wishlist profile to study personal information exposure in Amazon especially when we are particularly interested in potential user information leakage. Table~\ref{tb:stat} illustrates information exposure in user list profiles. We found that a considerable number of users put their birthday and location information in their list profiles. Furthermore, most of the people who have a list-description have exposed their birthday and address information. Our findings agree with \cite{frankowski2006you}, which states that users tend to expose their personal information in open websites. 
+
+\begin{table}[!htbp]
+\centering
+\caption{Personal Information in User Profile}
+\label{tb:stat}
+\begin{adjustbox}{max width=.5\textwidth}
+\begin{tabular}{lll}
+Personal Info & User Number & Percentage \\
+Birthday & 280,328 & 29.0\% \\
+Location & 221,298 & 22.9\% \\
+Birthday \& Location & 150,004 & 15.5\% \\
+List-description & 104,846 & 10.8\% \\
+List-description \& Birthday & 94,284 & 9.7\% \\
+List-description \& Location & 59,731 & 6.2\% 
+\end{tabular}
+\end{adjustbox}
+\end{table}
 

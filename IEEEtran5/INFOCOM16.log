@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  23 JUN 2015 13:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  2 JUL 2015 01:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -405,7 +405,7 @@ Package: footnote 1997/01/28 1.13 Save footnotes around boxes
 )
 (./INFOCOM16.aux
 
-LaTeX Warning: Label `tb:east' multiply defined.
+LaTeX Warning: Label `fig:week' multiply defined.
 
 )
 \openout1 = `INFOCOM16.aux'.
@@ -544,111 +544,110 @@ Package pdftex.def Info: item.png used on input line 35.
 LaTeX Warning: Reference `itempage' on page 2 undefined on input line 42.
 
 ) (./analysis.tex [2 <./data_struct.png>]
+Overfull \hbox (9.00053pt too wide) in paragraph at lines 21--22
+ [] 
+ []
+
 <avglist.png, id=23, 485.815pt x 304.13625pt>
 File: avglist.png Graphic file (type png)
  <use avglist.png>
-Package pdftex.def Info: avglist.png used on input line 36.
+Package pdftex.def Info: avglist.png used on input line 26.
 (pdftex.def)             Requested size: 167.71574pt x 104.99208pt.
 
 <avgitem.png, id=24, 481.8pt x 306.14375pt>
 File: avgitem.png Graphic file (type png)
  <use avgitem.png>
-Package pdftex.def Info: avgitem.png used on input line 40.
+Package pdftex.def Info: avgitem.png used on input line 30.
 (pdftex.def)             Requested size: 167.71574pt x 106.568pt.
 
 <avgprice.png, id=25, 508.90125pt x 371.3875pt>
 File: avgprice.png Graphic file (type png)
  <use avgprice.png>
-Package pdftex.def Info: avgprice.png used on input line 44.
+Package pdftex.def Info: avgprice.png used on input line 34.
 (pdftex.def)             Requested size: 167.71574pt x 122.3939pt.
 
-Overfull \hbox (8.99986pt too wide) in paragraph at lines 99--100
- [] 
- []
+
+LaTeX Warning: Citation `mikians2012detecting' on page 3 undefined on input lin
+e 41.
 
 
-Overfull \hbox (9.00601pt too wide) in paragraph at lines 134--135
- [] 
- []
-
-
-Overfull \hbox (9.00601pt too wide) in paragraph at lines 165--166
- [] 
- []
-
-
-Overfull \hbox (8.99986pt too wide) in paragraph at lines 196--197
+Overfull \hbox (8.99986pt too wide) in paragraph at lines 74--75
  [] 
  []
 
 [3 <./searcheng.png> <./listitem.png> <./item.png>]
-Underfull \hbox (badness 2318) in paragraph at lines 214--215
-\OT1/ptm/m/n/10 there are many un-of-fi-cial or re-gional hol-i-days, in our
- []
-
-
-Underfull \hbox (badness 2181) in paragraph at lines 214--215
-\OT1/ptm/m/n/10 study only nation-wide fed-eral hol-i-days are con-sid-ered.
- []
-
-
-Underfull \hbox (badness 1953) in paragraph at lines 214--215
-\OT1/ptm/m/n/10 There are to-tally 10 qual-i-fied hol-i-days. These hol-i-days
- []
-
-
-Overfull \hbox (9.02394pt too wide) in paragraph at lines 235--236
+Overfull \hbox (9.01627pt too wide) in paragraph at lines 100--101
  [] 
  []
+
+
+Overfull \hbox (9.00427pt too wide) in paragraph at lines 122--123
+ [] 
+ []
+
+<weekday.png, id=32, 457.71pt x 280.04625pt>
+File: weekday.png Graphic file (type png)
+ <use weekday.png>
+Package pdftex.def Info: weekday.png used on input line 142.
+(pdftex.def)             Requested size: 209.63669pt x 128.26305pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [4 <./avglist.png> <./avgitem.png> <./avgprice.png>]
-Overfull \hbox (8.99666pt too wide) in paragraph at lines 267--268
- [] 
- []
 
-<year.png, id=38, 467.7475pt x 307.1475pt>
-File: year.png Graphic file (type png)
- <use year.png>
-Package pdftex.def Info: year.png used on input line 284.
-(pdftex.def)             Requested size: 117.92163pt x 77.43344pt.
+LaTeX Warning: Reference `year' on page 5 undefined on input line 173.
 
-<holiday.png, id=39, 463.7325pt x 319.1925pt>
+<holiday.png, id=39, 437.635pt x 280.04625pt>
 File: holiday.png Graphic file (type png)
  <use holiday.png>
-Package pdftex.def Info: holiday.png used on input line 290.
-(pdftex.def)             Requested size: 117.92163pt x 81.16652pt.
+Package pdftex.def Info: holiday.png used on input line 188.
+(pdftex.def)             Requested size: 235.84328pt x 150.91931pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 282--294
+<alldif.png, id=40, 351.3125pt x 449.68pt>
+File: alldif.png Graphic file (type png)
+ <use alldif.png>
+Package pdftex.def Info: alldif.png used on input line 202.
+(pdftex.def)             Requested size: 117.92163pt x 150.94049pt.
+
+<diff.png, id=41, 351.3125pt x 449.68pt>
+File: diff.png Graphic file (type png)
+ <use diff.png>
+Package pdftex.def Info: diff.png used on input line 208.
+(pdftex.def)             Requested size: 117.92163pt x 150.94049pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 200--212
  []$[]$$[]$ 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<alldif.png, id=40, 351.3125pt x 449.68pt>
-File: alldif.png Graphic file (type png)
- <use alldif.png>
-Package pdftex.def Info: alldif.png used on input line 307.
-(pdftex.def)             Requested size: 117.92163pt x 150.94049pt.
+[5 <./weekday.png> <./holiday.png>]) (./privacy.tex [6 <./alldif.png> <./diff.p
+ng>]
+Underfull \vbox (badness 1997) has occurred while \output is active []
 
-<diff.png, id=41, 351.3125pt x 449.68pt>
-File: diff.png Graphic file (type png)
- <use diff.png>
-Package pdftex.def Info: diff.png used on input line 313.
-(pdftex.def)             Requested size: 117.92163pt x 150.94049pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 305--317
- []$[]$$[]$ 
- []
-
-[5 <./year.png> <./holiday.png> <./alldif.png> <./diff.png>]) (./privacy.tex
-[6]
 Overfull \hbox (9.0092pt too wide) in paragraph at lines 78--79
  [] 
  []
 
-) (./limitation.tex [7]) (./relatedwork.tex) (./conclusion.tex)
-(./INFOCOM16.bbl
+) (./limitation.tex [7]) (./relatedwork.tex) (./conclusion.tex
+Overfull \hbox (8.99986pt too wide) in paragraph at lines 33--34
+ [] 
+ []
+
+
+Overfull \hbox (8.99986pt too wide) in paragraph at lines 64--65
+ [] 
+ []
+
+
+Overfull \hbox (8.99986pt too wide) in paragraph at lines 94--95
+ [] 
+ []
+
+) (./INFOCOM16.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
 []\OT1/ptm/m/n/8 1000 most com-mon fe-male names in the u.s.
  []
@@ -674,7 +673,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--22
 []\OT1/ptm/m/n/8 West coast of the united states.
  []
 
-[8])
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 24--27
+[]\OT1/ptm/m/n/8 CATALYST.  Women's earn-ings and in-come, 2015.
+ []
+
+)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -686,9 +690,7 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[9
-
-] (./INFOCOM16.aux)
+[9] (./INFOCOM16.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -697,10 +699,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6249 strings out of 493117
- 96654 string characters out of 6135433
- 202061 words of memory out of 5000000
- 9546 multiletter control sequences out of 15000+600000
+ 6251 strings out of 493117
+ 96705 string characters out of 6135433
+ 197050 words of memory out of 5000000
+ 9547 multiletter control sequences out of 15000+600000
  40252 words of font info for 78 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  40i,9n,75p,2266b,405s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -713,7 +715,7 @@ e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2
 dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2014/texmf-dist/font
 s/type1/urw/times/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/ur
 w/times/utmri8a.pfb>
-Output written on INFOCOM16.pdf (9 pages, 666576 bytes).
+Output written on INFOCOM16.pdf (9 pages, 650817 bytes).
 PDF statistics:
  90 PDF objects out of 1000 (max. 8388607)
  48 compressed objects within 1 object stream

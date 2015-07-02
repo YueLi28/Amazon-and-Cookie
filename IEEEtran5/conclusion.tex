@@ -1,2 +1,95 @@
 \section{Conclusion}
 In this project, we investigate Amazon public wish lists, where users store their desired products. We collect over 20,000 users' complete profile and wish list items and take a 2-step approach to analyze our data. The first step is that we try to measure the user behavior from their wish lists. We answer the following questions: 1) Are users from different regions follow the same shopping patter? Is there any difference among people in different regions? 2) Is the common belief that people shop more during special date, especially holidays reflected in Amazon wish list? Our result shows that although people from different regions are following a general shopping behavior, they still have differences. Interesting observations such as east coast people are less willing to pay high price on clothing are presented in our measurement result. Furthermore, we investigate user shopping preference in holidays and normal days. We found that people do shop more in holidays, but the increase is not significant. We then explore different holidays through a year, we found that although there are holidays that people shop much more than normal days, there are over half of the holidays that have no increase or even lower shopping records.  The second step we take is trying to identify personal information from the items in a user's wish list. We retrieve our ground truth information from the data using a keyword approach -- searching a keyword in users' list-descriptions to divide users into different classes. This approach works well because it is accurate while it labels sufficient people for machine learning purpose. We use SVM to train and classify the data obtained from the information retrieval step. We examined 2 types of personal information -- gender and hobbies. We use the first 80\% data for training and the rest 20\% of data for testing. The gender classification gives a good success rate of over 80\%. However, identifying hobbies does not always achieve a satisfying success rate. This accuracy is not good enough to identify users' personal information. However, it can provide help when accuracy requirement is not high. It is also able to serve as a filter for a more complex identification tool.
+
+
+\section{Additional Data}
+\begin{table}[!ht]
+\centering
+\caption{East User Preference}
+\begin{adjustbox}{max width=.5\textwidth}
+\begin{tabular}{lllll}
+Rank & Item Type          & Number of Items & Percentage of Items & Average Price(\$) \\ \hline
+1 & Books & 248357 & 38.73\% & \$21.87 \\
+2 & Movies \& TV & 76642 & 11.95\% & \$26.82 \\
+3 & Buy a Kindle & 46996 & 7.33\% & \$10.15 \\
+4 & CDs \& Vinyl & 46811 & 7.30\% & \$18.33 \\
+5 & Toys \& Games & 42784 & 6.67\% & \$40.24 \\
+6 & Video Games & 19585 & 3.05\% & \$48.05 \\
+7 & Amazon Fashion & 18805 & 2.93\% & \$54.12 \\
+8 & Sports \& Outdoors & 17064 & 2.66\% & \$54.92 \\
+9 & Kitchen \& Dining & 16583 & 2.59\% & \$48.08 \\
+10 & Home \& Kitchen & 13568 & 2.12\% & \$56.90 \\
+11 & Home Improvement & 11019 & 1.72\% & \$57.58 \\
+12 & All Electronics & 9457 & 1.47\% & \$123.46 \\
+13 & Health \& Personal Care & 7527 & 1.17\% & \$33.49 \\
+14 & All Beauty & 6609 & 1.03\% & \$25.14 \\
+15 & Computers & 6439 & 1.00\% & \$125.72 \\
+16 & Camera \& Photo & 6076 & 0.95\% & \$201.96 \\
+17 & Patio, Lawn \& Garden & 5263 & 0.82\% & \$68.42 \\
+18 & Grocery \& Gourmet Food & 4437 & 0.69\% & \$21.45 \\
+19 & Digital Music & 4410 & 0.69\% & \$8.77 \\
+20 & Automotive & 4181 & 0.65\% & \$57.23 \\
+\end{tabular}
+\end{adjustbox}
+\end{table}
+
+
+\begin{table}[!ht]
+\centering
+\caption{West User Preference}
+\begin{adjustbox}{max width=.5\textwidth}
+\begin{tabular}{lllll}
+Rank & Item Type          & Number of Items & Percentage of Items & Average Price(\$) \\ \hline
+1 & Books & 170646 & 40.55\% & \$22.02 \\
+2 & Movies \& TV & 53326 & 12.67\% & \$25.96 \\
+3 & Buy a Kindle & 32443 & 7.71\% & \$10.30 \\
+4 & CDs \& Vinyl & 30563 & 7.26\% & \$17.73 \\
+5 & Toys \& Games & 25275 & 6.01\% & \$41.67 \\
+6 & Video Games & 10809 & 2.57\% & \$45.89 \\
+7 & Amazon Fashion & 10598 & 2.52\% & \$56.69 \\
+8 & Sports \& Outdoors & 9801 & 2.33\% & \$59.55 \\
+9 & Kitchen \& Dining & 9791 & 2.33\% & \$48.12 \\
+10 & Home Improvement & 8094 & 1.92\% & \$70.88 \\
+11 & Home \& Kitchen & 7745 & 1.84\% & \$63.56 \\
+12 & All Electronics & 5786 & 1.37\% & \$124.45 \\
+13 & Health \& Personal Care & 4365 & 1.04\% & \$36.16 \\
+14 & Camera \& Photo & 4249 & 1.01\% & \$203.55 \\
+15 & Digital Music & 3981 & 0.95\% & \$8.42 \\
+16 & Computers & 3925 & 0.93\% & \$128.50 \\
+17 & All Beauty & 3389 & 0.81\% & \$25.50 \\
+18 & Arts, Crafts \& Sewing & 2921 & 0.69\% & \$27.85 \\
+19 & Grocery \& Gourmet Food & 2778 & 0.66\% & \$21.29 \\
+20 & Automotive & 2651 & 0.63\% & \$64.46 \\
+\end{tabular}
+\end{adjustbox}
+\end{table}
+
+\begin{table}[!ht]
+\centering
+\caption{Mid User Preference}
+\begin{adjustbox}{max width=.5\textwidth}
+\begin{tabular}{lllll}
+Rank & Item Type          & Number of Items & Percentage of Items & Average Price(\$) \\ \hline
+1 & Books & 449377 & 40.49\% & \$22.79 \\
+2 & Movies \& TV & 146774 & 13.23\% & \$25.12 \\
+3 & Buy a Kindle & 96586 & 8.70\% & \$9.13 \\
+4 & CDs \& Vinyl & 78067 & 7.03\% & \$17.02 \\
+5 & Toys \& Games & 67700 & 6.10\% & \$38.92 \\
+6 & Video Games & 31220 & 2.81\% & \$47.69 \\
+7 & Amazon Fashion & 27008 & 2.43\% & \$55.90 \\
+8 & Kitchen \& Dining & 25975 & 2.34\% & \$45.25 \\
+9 & Home \& Kitchen & 22353 & 2.01\% & \$56.94 \\
+10 & Sports \& Outdoors & 22192 & 2.00\% & \$59.24 \\
+11 & Home Improvement & 16485 & 1.49\% & \$62.64 \\
+12 & All Electronics & 13294 & 1.20\% & \$118.96 \\
+13 & Health \& Personal Care & 11506 & 1.04\% & \$34.83 \\
+14 & All Beauty & 9856 & 0.89\% & \$22.30 \\
+15 & Digital Music & 9309 & 0.84\% & \$8.86 \\
+16 & Computers & 8884 & 0.80\% & \$130.28 \\
+17 & Camera \& Photo & 8243 & 0.74\% & \$194.83 \\
+18 & Arts, Crafts \& Sewing & 7803 & 0.70\% & \$24.75 \\
+19 & Grocery \& Gourmet Food & 7692 & 0.69\% & \$21.61 \\
+20 & Patio, Lawn \& Garden & 7661 & 0.69\% & \$65.30 \\
+\end{tabular}
+\end{adjustbox}
+\end{table}
