@@ -82,7 +82,19 @@ There are also many other works on graphical passwords. For example, requiring u
 
 
 
+##Password and the Evolution of Imperfect Authentication
 
+__Password role changing__
+
+1960s, password was first introduced in MIT for protecting resources -> plaintext password leaks
+
+1970s, MULTICS store passwords in hashed form, in 1979 salt was introduced
+
+1990s, pubilc-key cryptography was designed to replace passwords but failed due to burdon on managing certificates and private keys. Plaintext in HTML form exchanges for token becomes dominant.
+
+Hardware tokens as a second factor -- low deployment.
+
+Use smartphones as a second factor of authentication.
 
 
 
