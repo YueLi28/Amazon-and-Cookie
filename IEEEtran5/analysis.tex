@@ -5,9 +5,9 @@ Now we aim to dissect our dataset to reveal how users use their wishlists. Parti
 \subsection{Basic Statistics}
 First we conduct fundamental measurements on the dataset to help build basic understanding on how wishlists are used and to what extend the users expose their personal information in Amazon. 
 
-For all 967,603 users collected in the first step of data collection, we record totally 2,121,173 wishlists and 5,700,000 items (in which 2,248,142 items are unique). We show distribution metrics in Table~\ref{tb:stat2}. As we can see from the table, every user has 2.56 wishlists in average with standard deviation of 4.97. The average number and standard deviation of items in a wishlist is 74.2 and 187.3 accordingly. And the average and standard deviation of product price is \$35.06 and 172.0. Note that although we list the maximum number of wishlists a user has (Similarly, items in wishlists and item price) in our dataset, we did not probe the limit set by Amazon. All three distributions have very high skewness~($\gamma_1$) and kurtosis~($\kappa$), which means the distributions are very skewed and heavily tailed. For clearer presentation, we show the distribution of wishlist in Figure~\ref{avglist}, distribution of items in Figure~\ref{avgitem}, and distribution of price in Figure~\ref{avgprice} using log-scaled y axis.
+For all 967,603 users collected in the first step of data collection, we record totally 2,121,173 wishlists and 5,700,000 items (in which 2,248,142 items are unique). We show distribution metrics in Table~\ref{tb:stat2}. As we can see from the table, every user has 2.56 wishlists in average with standard deviation of 4.97. The average number and standard deviation of items in a wishlist is 74.2 and 187.3 accordingly. And the average and standard deviation of product price is \$35.06 and \$172.0. Note that although we list the maximum number of wishlists a user has (Similarly, items in wishlists and item price) in our dataset, we did not probe the limit set by Amazon. All three distributions have very high skewness~($\gamma_1$) and kurtosis~($\kappa$), which means the distributions are very skewed and heavily tailed. For clearer presentation, we show the distribution of wishlist in Figure~\ref{avglist}, distribution of items in Figure~\ref{avgitem}, and distribution of price in Figure~\ref{avgprice} using log-scaled y axis.
 
-\begin{table}[!htbp]
+\begin{table}[t]
 \centering
 \caption{Distributions}
 \label{tb:stat2}
@@ -21,7 +21,7 @@ Item Price & 35.06 & 105,065 & 172.0 & 299.4 & 144,743.2 \\
 \end{adjustbox}
 \end{table}
 
-\begin{figure*}[!htb]
+\begin{figure*}[t]
 \minipage{0.32\textwidth}
   \includegraphics[width=\linewidth]{avglist.png}
   \caption{Number of lists the users have}\label{avglist}
@@ -43,7 +43,7 @@ A core question on user preference is what the users would like to buy and how m
 We show national user preference in Table~\ref{tb:overall}. With over 40\% of items in wishlist being books, we can see books are in domination. Beside normal paperback books, E-books in Kindle are also being very popular. We believe the cheap price of E-book is a main reason for its prosperity (Books are 136.7\% more expensive than E-books in average). Other than books, entertainment products play second important roles. Movies \& TV, CDs \& Vinyl, Toys \& Games, and Video games rank 2, 4, 5, 6 accordingly, which indicate that users are normally pursuing leisure products on Amazon. The following popular products are fashions, home related, and sport items. We also found that Computers, All Electronics, and Camera are only 3 types of products users are paying more than \$100 in average, which shows that users are paying substantially more in electronic devices than other products.
 
 
-\begin{table}[!ht]
+\begin{table}[t]
 \centering
 \caption{Overall User Preference}
 \label{tb:overall}
@@ -74,12 +74,13 @@ Rank & Item Type          & Number of Items & Percentage of Items & Average Pric
 \end{adjustbox}
 \end{table}
 
-After analyzing the general shopping preference of Amazon users, it is natural to study the preferences of people from different demographical and geographical groups. For demographical factor, we compare the shopping preference of males and females. For geographical factor, we compare customers from 3 different geo-location, which are -- east coast \cite{east}, west coast\cite{west}, and middle of the US. 
+After analyzing the general shopping preference of Amazon users, it is natural to study the preferences of people from different demographical and geographical groups. For demographical factor, we compare the shopping preference of males and females. For geographical factor, we compare customers from 3 different geo-location \footnote{East coast includes Maine, New Hampshire, Massachusetts, Rhode Island, Connecticut, New York, New Jersey, Delaware, Maryland, Virginia, North Carolina, South Carolina and Georgia. West coast includes California, Oregon and Washington. Middle of the US includes the rest states}, which are -- east coast, west coast, and middle of the US. 
 
 \subsubsection{Different Gender}
-To start with, we show the top 10 popular products of male users in Table~\ref{tb:male} and female users in Table~\ref{tb:female}. In addition, the average product price for male and female is \$36.95 and \$26.53 correspondingly. Clearly we can find that male and female customers have different shopping preference. First of all, products in males' wishlists have 39.3\% higher price than those in females' wishlists averagely. Furthermore, males are willing to pay higher price in all categories in the two tables. The gap between the product price is even larger than the income gap between males and females, which are reported that males earn 21.1\% more than females in 2014~\cite{menvswomen}. Therefore we concluded that males are prone to spend more online. Beside the price difference, different genders also prefer different categories of products. While ``Books" and ``Buy a Kindle" account around 50\% of the products for both genders, male customers are more likely to buy a paperback book instead of E-books than female customers. Males prefer sports and electronics while females prefer fashions and beauty-related items. Interestingly, females like ``Arts, Crafts \& Sewing" much more than males as such items count only 0.3\% of all products and ranks 26 in all categories for males. In general, 13 out of the most popular 24 categories (both male and female have over 5000 products in these categories) have over 100\% difference, which means that the percentage of certain product of a gender is at least double as the other gender. 
+\label{differentgender}
+To start with, we show the top 10 popular products of male users in Table~\ref{tb:male} and female users in Table~\ref{tb:female}. In addition, the average product price for male and female is \$36.95 and \$26.53 correspondingly. Clearly we can find that male and female customers have different shopping preference. First of all, products in males' wishlists have 39.3\% higher price than those in females' wishlists averagely. Furthermore, males are willing to pay higher price in all categories in the two tables. The gap between the product price is even larger than the income gap between males and females, which are reported that males earn 21.1\% more than females in 2014~\footnote{http://www.catalyst.org/knowledge/womens-earnings-and-income}. Therefore we concluded that males are prone to spend more online. Beside the price difference, different genders also prefer different categories of products. While ``Books" and ``Buy a Kindle" account around 50\% of the products for both genders, male customers are more likely to buy a paperback book instead of E-books than female customers. Males prefer sports and electronics while females prefer fashions and beauty-related items. Interestingly, females like ``Arts, Crafts \& Sewing" much more than males as such items count only 0.3\% of all products and ranks 26 in all categories for males. In general, 13 out of the most popular 24 categories (both male and female have over 5000 products in these categories) have over 100\% difference, which means that the percentage of certain product of a gender is at least double as the other gender. 
 
-\begin{table}[!ht]
+\begin{table}[t]
 \centering
 \caption{Male User Preference}
 \label{tb:male}
@@ -101,7 +102,7 @@ Rank & Item Type          & Number of Items & Percentage of Items & Average Pric
 \end{table}
 
 
-\begin{table}[!ht]
+\begin{table}[t]
 \centering
 \caption{Female User Preference}
 \label{tb:female}
@@ -131,13 +132,12 @@ The total amount of items from east coast, west coast, and mid of US are 641,252
 To conclude, we show that different genders expose vastly different online shopping preference. We also show that people from 3 different regions have similar shopping pattern. Although in most cases it is true, we still point out noticeable diversity among users in these 3 regions. 
 
 \subsection{Time Factor}
-After analyzing product categories and price, we study another important factor that describes user behaviors -- time factor. We explore shopping trend during weekdays and weekends, as well as normal days and holidays. By investigating the added date of items we are able to learn the days that are most appealing to shoppers. Learned from 5,710,674 items, users start to add items to wishlists since 1999. Each year the items added increase 85.6\% in average. This rapid increase is reasonable since electronic commercials are gaining popularity. 
+After analyzing product categories and price, we study another important factor that describes user behaviors -- time factor. Learned from 5,710,674 items, we found users start to add items to wishlists since 1999. There are only 2,056 items added in 1999. However, in each year the items added increase 85.6\% in average. This rapid increase is reasonable since electronic commercials are gaining popularity. Next we explore shopping trend during weekdays and weekends, as well as normal days and holidays. By investigating the added date of items we are able to learn the days that are most appealing to shoppers.
 
 \subsubsection{Weekdays and Weekends}
-Intuitively users may browse and shop online more on weekends since they have more free time. Surprisingly our analysis indicates that this intuition is in fact premature. Generally 3,905,728 and 1,523,764 items are added in 4,174 weekdays and 1,670 weekends. Therefore averagely 935.7 items are added on a weekday and 912.4 items are added on a weekend, which implies weekend has 2.55\% less added items. We further present our result in terms of each year to show the trend in Figure~\ref{fig:week}.
+Intuitively users may browse and shop online more on weekends since they have more free time. Surprisingly our analysis indicates that this intuition is in fact premature. Generally 3,905,728 and 1,523,764 items are added in 4,174 weekdays and 1,670 weekends from 1999 to 2014. Therefore averagely 935.7 items are added on a weekday and 912.4 items are added on a weekend, which implies weekend has 2.55\% less added items. We further present our result in terms of each year to show the general trend in Figure~\ref{fig:week}. As the figure shows, the gap between items in weekdays and weekends is large in earlier years but keeps shrinking. Items added in weekends start to exceed weekdays after 2012. However, there is no evidence showing that weekends would keep growing faster than weekdays. Therefore we conclude that currently people browse and shop online almost equally during weekdays and weekends. A reasonable explanation for this equality is that online shopping consume little effort from users -- all the they need to do is to sit in front of a computer at any time -- so they are not motivated to devote large chunks of free time in weekends to online shopping.
 
-
-\begin{figure}[h!]
+\begin{figure}[t]
 \centering
   \caption{Items Added in Weekdays and Weekends}{}
   \label{fig:week}
@@ -146,10 +146,9 @@ Intuitively users may browse and shop online more on weekends since they have mo
 \end{figure}
 
 \subsubsection{Normal days and Holidays}
+After studying the shopping favor in weekdays and weekends, similarly we measure holidays and normal days. As there are too many unofficial and regional holidays to study, our study focuses on nation-wide federal holidays. There are totally 10 qualified holidays~\footnote{http://www.archives.gov/news/federal-holidays.html}, which are listed in Table~\ref{tb:holiday}.
 
-In this section we measure how the items are added in the wish lists during holidays and normal days. As there are many unofficial or regional holidays, our study considers only nation-wide federal holidays. There are totally 10 qualified holidays. These holidays (http://www.usa.gov/citizens/holidays.shtml) and the date of the holidays are listed in Table~\ref{tb:holiday}.
-
-\begin{table}[!ht]
+\begin{table}[t]
 \centering
 \caption{U.S Federal Holidays}
 \label{tb:holiday}
@@ -169,21 +168,13 @@ Christmas Day & December 25  \\
 \end{adjustbox}
 \end{table}
 
-We analyze the data in 2 dimensions. First, We measure the items added in these holidays and compare the average items added in holidays and normal days. Then we compare the added items among different holidays. When calculating items added in a certain holiday, we consider the nearest consecutive 5 days. That is to say, we include the previous 2 days and the next 2 days in our holiday shopping session. For example, the Christmas day is December 25. We will include December 23, December 24, December 25, December 26, December 27 in Christmas day calculation. As a result, calculate items added during a year in a little different manner -- we include the last 2 days in previous year because the 2 days are considered New Year's day. We do not include the first 2 days in the next year because there is no holidays in the end of Decembers.
+When shopping in holidays, users may not always buy products on the exact date. For example, People usually prepare gifts before Thanksgiving. Therefore, we consider the nearest consecutive 5 days in our holiday shopping period (previous 2 days and next 2 days). Any day in this period will be counted as shopping in the holiday. For example, We include December 23 to December 27 to calculate the shopping behavior in Christmas day. Note that as a side effect of our methodology, the last 2 days of the previous year are also included when analyzing New Year's day. However, it does not affect our results since we are only interested in the average items in normal days and holidays.
 
+First, we show the average number of items in normal days and holidays in each year as well as the increase rate in Figure~\ref{fig:holiday}. Interestingly we found that there is very limited increase from normal days to holidays in average. The average increase is 10.14\%. However, as the data of year 1999 is not sufficient to be representative (Only 2,056 items in 1999), we exclude this year in calculation. Therefore the average increase becomes 5.8\%. We then conclude that generally people do shop online more during holidays. However, the increase in holidays is merely 5.8\%. 
 
-\subsubsection{Holidays and Normal Days}
-According to our data, people start to add items in their wish lists since 1999. We analyze the items added in normal days and holidays in each year by calculating the average items added in the 2 groups. Figure~\ref{year} shows the items added in normal days and holidays 
+Our findings are against common impression that people do shop a lot in holidays, especially Thanksgiving and Christmas. We realized that it is rough to group all national holidays together to compare to normal days. Instead we could treat holiday individually since they are also different from each other. Therefore we compute the average number of items added in each of the holiday. Similar to previous general study, we count the nearest consecutive 5 days of the holiday date as the holiday period. To show both the general case and the current trend, we use the data from 1999 to 2014 and the year 2014 solely. We do not use data from year 2015 because during the time of this study, year 2015 has not been finished. Note that when computing the average item number added in normal days, we leave out all the holiday periods instead of the one that is being analyzed. We show the result in Figure~\ref{fig:diffholiday}. Clearly we can see that holidays are very different from each other. Based on the figure we also made following interesting observations.
 
-
-\begin{enumerate}
-\item The items added in wish lists increase year by year, no matter in normal days or holidays. We believe that the reason behind is that electric commercial gains its popularity.
-\item There is increase in number of items added during holidays. The average increase rate is 10.89\%. However, as the data for year 1999 is not sufficient to be representative, we exclude year 1999 in our calculation and eventually we conclude that there is around 5.9\% increase in holidays. 
-\item Generally people do buy more stuff during holidays. However, the increase is very limited. In 2001, the items added during holidays are even less than normal days. 
-\end{enumerate}
-
-
-\begin{figure}[h!]
+\begin{figure}[t]
 \centering
   \caption{Items Added in Normal Days and Holidays}{}
   \label{fig:holiday}
@@ -191,51 +182,24 @@ According to our data, people start to add items in their wish lists since 1999.
     \includegraphics[width=0.45\textwidth]{holiday.png}
 \end{figure}
 
-
-\subsubsection{Different Holidays}
-Previously we compared the shopping difference between holidays and normal days. We found that although people shop more in holidays, the increase is not that much. Our findings are against common impression that people do shop a lot in holidays, especially Thanksgiving and Christmas. We realized that it is rough to group all national holidays together to compare to normal days. We believe that holidays are also different from each other. For example people tend to shop more in Thanksgiving and Christmas. Therefore we compare different holidays in our study. Similarly, we include the last 2 days in the previous year in our analysis. There are 10 national holidays as introduced before. We again calculate the average number of items added in the nearest consecutive 5 days and compare to the average number of normal days. 
-
-We use the data from year 1999 - 2014 and the year 2014 solely. We wish to show both the average case(from 1999-2013) and the current trend (only year 2013). We do not use data from Year 2014 because during the time of the study, the years 2014 has not been finished. Note that when computing the average item number added in normal days, we leave out all the holidays instead of simply leaving out the one that is being analyzed. The result is shown in Figure~\ref{alldiffholiday} for 1999-2013 and Figure~\ref{diffholiday} for the year 2013. In Figure~\ref{diffholiday}, The x-axis indicate the holidays accordingly (0-New Year's day, 1-Birthday of Martin Luther King, Jr, 2-Washington's Birthday, 3-Memorial Day, 4-Independence Day, 5-Labor Day, 6-Columbus day, 7-Veterans Day, 8-Thanksgiving day, 9-Christmas day).
-
-
-\begin{figure}[!h]
-\centering
-\begin{minipage}{.25\textwidth}
-  \centering
-  \includegraphics[width=.9\linewidth]{alldif.png}
-  \captionof{figure}{Different Holidays in 1999-2014}
-  \label{alldiffholiday}
-\end{minipage}%
-\begin{minipage}{.25\textwidth}
-  \centering
-  \includegraphics[width=.9\linewidth]{diff.png}
-  \captionof{figure}{Different Holidays in 2014}
-  \label{diffholiday}
-\end{minipage}
-\end{figure}
-
-
-%\begin{figure}[H]
-%%\minipage{0.5\textwidth}
-%  \includegraphics[width=\linewidth]{alldif.png}
-%\caption{Different Holidays through 16 years}.
-%\label{alldiffholiday}
-%\endminipage\hfill
-%\minipage{0.5\textwidth}%
-%  \includegraphics[width=\linewidth]{diff.png}
-%\caption{Different Holidays in 2014}.
-%\label{diffholiday}
-%\endminipage
-%\end{figure}
-
-
-According to Figure~\ref{alldiffholiday} and Figure~\ref{diffholiday}, we find that holidays have huge difference between each other. In addition, we make the following observations:
-\begin{enumerate}
-\item The 2 figures match very well, which means that people do not tend to change their shopping behaviors at least during a short period of time. 
-\item Some of the holidays are not much different from normal days (For example, Columbus Day). What is more, some of the holidays make the people less willing to add items in their wish lists. 
+\begin{enumerate}[leftmargin=*]
+\item The sub-figures for year 2014 and average case match well, which indicates that people do not tend to change their shopping behaviors in the long run. 
 \item New Year's day, Veterans day, Thanksgiving, and Christmas day are 4 holidays that have quite obvious shopping increase. The result indicates that people tend to buy more stuff during the 4 holidays. The increase rate is 4.1\%, 25.2\%,72.8\%, and 30.2\% accordingly for all 15 years we analyzed. 
-\item Among the 4 holidays, Thanksgiving day is the most shopping appealing holiday, which is 72.8\% higher than normal days. It is reasonable because people always get considerable discount during thanksgiving days. Christmas is the second most shopping appealing holiday because people always need to buy presents during Christmas.
-\item At the first glance it is surprising that 4 holidays -- Birthday of Martin Luther King. Jr, Washington's Birthday, Memorial Day, Independence Day, and Labor day -- clearly have even less items added to user Wish Lists. The drop percentage is 10.7\%, 11.8\%, 9.0\%, 11.3\%, and 4.6\%. One possible reason is that People are more likely to be involved in other activities other than shopping during these holidays. 3 out of the 4 holidays are memorial days. Certainly these days are considered not good for shopping. 
+\item Among the 4 holidays, Thanksgiving day is the most shopping appealing holiday, which is 72.8\% higher than normal days. Christmas ranks second with 30.2\% increase. We believe the result is reasonable because people always get considerable discount during thanksgiving. Besides, Thanksgiving and Christmas usually involve lots of presents.
+\item Some of the holidays are close to normal days in terms of number of added items in user wishlists (For example, Columbus Day). Furthermore, some of the holidays make the people less willing to add items in their wish lists. 4 holidays -- Birthday of Martin Luther King. Jr, Washington's Birthday, Memorial Day, Independence Day, and Labor day --  have clearly less items added to user Wish Lists. The drop percentage is 10.7\%, 11.8\%, 9.0\%, 11.3\%, and 4.6\% accordingly. One possible reason is that People are more likely to be engaged in other activities other than shopping during these holidays since 3 out of the 4 holidays are memorial-type days.
+
 \end{enumerate}
 
-We believe our quantitative results are helpful in guiding merchant marketing strategies and targeted advertising. 
+\begin{figure}[t]
+\centering
+  \caption{Items Added in Different Holidays}{}
+  \label{fig:diffholiday}
+  \centering
+    \includegraphics[width=0.45\textwidth]{holidayfig.png}
+\end{figure}
+
+\subsection{Result Implications}
+Up to this point, we have analyzed 3 aspects regarding to user online shopping behaviors in Amazon. They are product categories and price users prefer in general and on a gender basis. And time factor that affects user shopping behaviors Since Amazon is the largest electronic commercial in the world that offers almost all kinds of products, we believe our analysis is also able to shed light on the general case in e-commerce industry. 
+
+Our insights on user shopping patterns can be used both in general education purpose and commercial related purpose. Understanding user behavior can be an important factor in e-commerce ecosystem. Equipped with the knowledge, companies are able to better investigate the potential of products, refine marketing strategies, and do timely promotions. Besides, our result show user preference from different user groups, it can also help develop more accurate targeted advertising.
+

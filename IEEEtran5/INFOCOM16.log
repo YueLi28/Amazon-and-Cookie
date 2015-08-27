@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  2 JUL 2015 10:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  27 JUL 2015 14:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -403,21 +403,34 @@ Package: footnote 1997/01/28 1.13 Save footnotes around boxes
 \fn@notes=\box34
 \fn@width=\dimen160
 )
+(/usr/local/texlive/2014/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 373.
+Package: cite 2010/09/10  v 5.3
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip57
+\enit@outerparindent=\dimen161
+\enit@toks=\toks26
+\enit@inbox=\box35
+\enitdp@description=\count129
+)
 (./INFOCOM16.aux)
 \openout1 = `INFOCOM16.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
@@ -426,17 +439,17 @@ Package caption Info: End \AtBeginDocument code.
 
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count129
-\scratchdimen=\dimen161
-\scratchbox=\box35
-\nofMPsegments=\count130
-\nofMParguments=\count131
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count132
-\MPscratchDim=\dimen162
-\MPnumerator=\count133
-\makeMPintoPDFobject=\count134
-\everyMPtoPDFconversion=\toks27
+\scratchcounter=\count130
+\scratchdimen=\dimen162
+\scratchbox=\box36
+\nofMPsegments=\count131
+\nofMParguments=\count132
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count133
+\MPscratchDim=\dimen163
+\MPnumerator=\count134
+\makeMPintoPDFobject=\count135
+\everyMPtoPDFconversion=\toks28
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -489,16 +502,16 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ” in font ptmr7t!
 ) (./data.tex
-Underfull \hbox (badness 10000) in paragraph at lines 2--3
-\OT1/ptm/m/n/10 (http://www.statista.com/statistics/237810/number-of-active-
+Underfull \hbox (badness 10000) in paragraph at lines 2--2
+[][][]\OT1/ptm/m/n/8 http://www.statista.com/statistics/237810/number-of-active
+-amazon-
  []
 
+[1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--3
-\OT1/ptm/m/n/10 amazon-customer-accounts-worldwide/). With such large
- []
 
-<data_struct.png, id=1, 963.6pt x 722.7pt>
+]
+<data_struct.png, id=9, 963.6pt x 722.7pt>
 File: data_struct.png Graphic file (type png)
  <use data_struct.png>
 Package pdftex.def Info: data_struct.png used on input line 10.
@@ -512,26 +525,19 @@ Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 18.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
-
-]
-<searcheng.png, id=12, 1067.99pt x 459.7175pt>
+<searcheng.png, id=11, 1067.99pt x 459.7175pt>
 File: searcheng.png Graphic file (type png)
  <use searcheng.png>
 Package pdftex.def Info: searcheng.png used on input line 27.
 (pdftex.def)             Requested size: 167.71574pt x 72.18843pt.
 
-<listitem.png, id=13, 1223.57124pt x 526.96875pt>
+<listitem.png, id=12, 1223.57124pt x 526.96875pt>
 File: listitem.png Graphic file (type png)
  <use listitem.png>
 Package pdftex.def Info: listitem.png used on input line 31.
 (pdftex.def)             Requested size: 167.71574pt x 72.23126pt.
 
-<item.png, id=14, 824.07875pt x 400.49625pt>
+<item.png, id=13, 824.07875pt x 400.49625pt>
 File: item.png Graphic file (type png)
  <use item.png>
 Package pdftex.def Info: item.png used on input line 35.
@@ -540,7 +546,7 @@ Package pdftex.def Info: item.png used on input line 35.
 
 LaTeX Warning: Reference `itempage' on page 2 undefined on input line 42.
 
-) (./analysis.tex [2 <./data_struct.png>]
+[2 <./data_struct.png>]) (./analysis.tex
 Overfull \hbox (9.00053pt too wide) in paragraph at lines 21--22
  [] 
  []
@@ -562,23 +568,18 @@ File: avgprice.png Graphic file (type png)
  <use avgprice.png>
 Package pdftex.def Info: avgprice.png used on input line 34.
 (pdftex.def)             Requested size: 167.71574pt x 122.3939pt.
-
-
-LaTeX Warning: Citation `mikians2012detecting' on page 3 undefined on input lin
-e 41.
-
-
+ [3 <./searcheng.png> <./listitem.png> <./item.png>]
 Overfull \hbox (8.99986pt too wide) in paragraph at lines 74--75
  [] 
  []
 
-[3 <./searcheng.png> <./listitem.png> <./item.png>]
-Overfull \hbox (9.01627pt too wide) in paragraph at lines 100--101
+
+Overfull \hbox (9.01627pt too wide) in paragraph at lines 101--102
  [] 
  []
 
 
-Overfull \hbox (9.00427pt too wide) in paragraph at lines 122--123
+Overfull \hbox (9.00427pt too wide) in paragraph at lines 123--124
  [] 
  []
 
@@ -588,88 +589,38 @@ File: weekday.png Graphic file (type png)
  <use weekday.png>
 Package pdftex.def Info: weekday.png used on input line 145.
 (pdftex.def)             Requested size: 235.84328pt x 144.3002pt.
-
-
-LaTeX Warning: Reference `year' on page 5 undefined on input line 176.
-
-<holiday.png, id=39, 437.635pt x 280.04625pt>
+ [5 <./weekday.png>] <holiday.png, id=43, 437.635pt x 280.04625pt>
 File: holiday.png Graphic file (type png)
  <use holiday.png>
-Package pdftex.def Info: holiday.png used on input line 191.
+Package pdftex.def Info: holiday.png used on input line 182.
 (pdftex.def)             Requested size: 235.84328pt x 150.91931pt.
 
-<alldif.png, id=40, 351.3125pt x 449.68pt>
-File: alldif.png Graphic file (type png)
- <use alldif.png>
-Package pdftex.def Info: alldif.png used on input line 205.
-(pdftex.def)             Requested size: 117.92163pt x 150.94049pt.
-
-<diff.png, id=41, 351.3125pt x 449.68pt>
-File: diff.png Graphic file (type png)
- <use diff.png>
-Package pdftex.def Info: diff.png used on input line 211.
-(pdftex.def)             Requested size: 117.92163pt x 150.94049pt.
-
-Overfull \hbox (9.0pt too wide) in paragraph at lines 203--215
- []$[]$$[]$ 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[5 <./weekday.png> <./holiday.png>]) (./privacy.tex [6 <./alldif.png> <./diff.p
-ng>]
-Overfull \hbox (9.0092pt too wide) in paragraph at lines 78--79
- [] 
- []
-
-) (./limitation.tex [7]) (./relatedwork.tex) (./conclusion.tex [8]
-Overfull \hbox (8.99986pt too wide) in paragraph at lines 33--34
+<holidayfig.png, id=44, 395.4775pt x 449.68pt>
+File: holidayfig.png Graphic file (type png)
+ <use holidayfig.png>
+Package pdftex.def Info: holidayfig.png used on input line 198.
+(pdftex.def)             Requested size: 235.84328pt x 268.17017pt.
+ [6 <./holiday.png> <./holidayfig.png>]) (./privacy.tex
+Overfull \hbox (9.00047pt too wide) in paragraph at lines 47--48
  [] 
  []
 
 
-Overfull \hbox (8.99986pt too wide) in paragraph at lines 64--65
- [] 
+Underfull \hbox (badness 2057) in paragraph at lines 54--55
+\OT1/ptm/m/n/10 descriptions. With these es-sen-tial in-for-ma-tion, to re-
  []
 
-
-Overfull \hbox (8.99986pt too wide) in paragraph at lines 94--95
- [] 
+[7]
+Overfull \hbox (9.00578pt too wide) in paragraph at lines 87--88
+[] 
  []
 
-) (./INFOCOM16.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 4--6
-[]\OT1/ptm/m/n/8 1000 most com-mon fe-male names in the u.s.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8--10
-[]\OT1/ptm/m/n/8 300 most com-mon male names in the u.s.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 12--14
-[]\OT1/ptm/m/n/8 Amazon wish list search en-gine.
- []
-
-
-Overfull \hbox (68.8103pt too wide) in paragraph at lines 16--18
-[]\OT1/ptm/m/n/8 East coast of the united states.  http://en.wikipedia.org/wiki
-/East[]Coast[]of[]the[]United[]States. 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 20--22
-[]\OT1/ptm/m/n/8 West coast of the united states.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 24--27
-[]\OT1/ptm/m/n/8 CATALYST.  Women's earn-ings and in-come, 2015.
- []
-
-)
+) (./limitation.tex) (./relatedwork.tex [8]) (./conclusion.tex)
+(./INFOCOM16.bbl
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+ [9])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -681,32 +632,35 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[9] (./INFOCOM16.aux)
+[10
+
+] (./INFOCOM16.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 6252 strings out of 493117
- 96718 string characters out of 6135433
- 191019 words of memory out of 5000000
- 9548 multiletter control sequences out of 15000+600000
- 40252 words of font info for 78 fonts, out of 8000000 for 9000
+ 6639 strings out of 493117
+ 103016 string characters out of 6135433
+ 191124 words of memory out of 5000000
+ 9924 multiletter control sequences out of 15000+600000
+ 42467 words of font info for 83 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 40i,9n,75p,2266b,405s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,11n,76p,2571b,468s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texl
 ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texliv
 e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2
-014/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2014/texmf-
-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2014/texmf-dist/font
-s/type1/urw/times/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/ur
-w/times/utmri8a.pfb>
-Output written on INFOCOM16.pdf (9 pages, 651223 bytes).
+014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/20
+14/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2014/texmf-d
+ist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2014/texmf-dist/fonts
+/type1/urw/times/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw
+/times/utmri8a.pfb>
+Output written on INFOCOM16.pdf (10 pages, 655373 bytes).
 PDF statistics:
- 90 PDF objects out of 1000 (max. 8388607)
- 48 compressed objects within 1 object stream
+ 95 PDF objects out of 1000 (max. 8388607)
+ 53 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

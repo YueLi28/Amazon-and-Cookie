@@ -3,50 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: INFOCOM16.aux
 The style file: abbrv.bst
 Database file #1: ref.bib
-Warning--to sort, need author or key in searcheng
-Warning--to sort, need author or key in mnames
-Warning--to sort, need author or key in fnames
-Warning--to sort, need author or key in east
-Warning--to sort, need author or key in west
-You've used 13 entries,
+You've used 19 entries,
             2118 wiz_defined-function locations,
-            567 strings with 6021 characters,
-and the built_in function-call counts, 4225 in all, are:
-= -- 431
-> -- 147
-< -- 5
-+ -- 61
-- -- 48
-* -- 250
-:= -- 606
-add.period$ -- 39
-call.type$ -- 13
-change.case$ -- 63
+            581 strings with 6989 characters,
+and the built_in function-call counts, 5775 in all, are:
+= -- 485
+> -- 367
+< -- 0
++ -- 145
+- -- 124
+* -- 352
+:= -- 1010
+add.period$ -- 57
+call.type$ -- 19
+change.case$ -- 118
 chr.to.int$ -- 0
-cite$ -- 18
-duplicate$ -- 177
-empty$ -- 390
-format.name$ -- 48
-if$ -- 961
+cite$ -- 19
+duplicate$ -- 246
+empty$ -- 478
+format.name$ -- 124
+if$ -- 1187
 int.to.chr$ -- 0
-int.to.str$ -- 13
-missing$ -- 7
-newline$ -- 63
-num.names$ -- 16
-pop$ -- 116
+int.to.str$ -- 19
+missing$ -- 19
+newline$ -- 98
+num.names$ -- 38
+pop$ -- 174
 preamble$ -- 1
-purify$ -- 50
+purify$ -- 99
 quote$ -- 0
-skip$ -- 138
+skip$ -- 139
 stack$ -- 0
-substring$ -- 261
-swap$ -- 60
-text.length$ -- 5
+substring$ -- 97
+swap$ -- 33
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 52
-warning$ -- 5
-while$ -- 35
-width$ -- 15
-write$ -- 131
-(There were 5 warnings)
+type$ -- 76
+warning$ -- 0
+while$ -- 38
+width$ -- 21
+write$ -- 192

@@ -1,75 +1,110 @@
 \begin{thebibliography}{10}
 
-\bibitem{fnames}
-1000 most common female names in the u.s.
-\newblock http://names.mongabay.com/female\_names.htm.
+\bibitem{brown2004investigating}
+M.~Brown and R.~Muchira.
+\newblock Investigating the relationship between internet privacy concerns and
+  online purchase behavior.
+\newblock {\em American Academy of Advertising. Journal of Electronic Commerce
+  Research}, 2004.
 
-\bibitem{mnames}
-300 most common male names in the u.s.
-\newblock http://names.mongabay.com/male\_names.htm.
-
-\bibitem{searcheng}
-Amazon wish list search engine.
-\newblock http://www.amazon.com/gp/registry/search.
-
-\bibitem{east}
-East coast of the united states.
-\newblock http://en.wikipedia.org/wiki/East\_Coast\_of\_the\_United\_States.
-
-\bibitem{west}
-West coast of the united states.
-\newblock http://en.wikipedia.org/wiki/West\_Coast\_of\_the\_United\_States.
-
-\bibitem{menvswomen}
-CATALYST.
-\newblock Women's earnings and income, 2015.
-\newblock http://www.catalyst.org/knowledge/womens-earnings-and-income.
+\bibitem{chaabane2012you}
+A.~Chaabane, G.~Acs, M.~A. Kaafar, et~al.
+\newblock You are what you like! information leakage through users’
+  interests.
+\newblock In {\em NDSS}, 2012.
 
 \bibitem{dave2003mining}
 K.~Dave, S.~Lawrence, and D.~M. Pennock.
 \newblock Mining the peanut gallery: Opinion extraction and semantic
   classification of product reviews.
-\newblock In {\em Proceedings of the 12th international conference on World
-  Wide Web}, pages 519--528. ACM, 2003.
-
-\bibitem{de2001mining}
-O.~De~Vel, A.~Anderson, M.~Corney, and G.~Mohay.
-\newblock Mining e-mail content for author identification forensics.
-\newblock {\em ACM Sigmod Record}, 30(4):55--64, 2001.
+\newblock In {\em ACM. WWW}, 2003.
 
 \bibitem{frankowski2006you}
 D.~Frankowski, D.~Cosley, S.~Sen, L.~Terveen, and J.~Riedl.
 \newblock You are what you say: privacy risks of public mentions.
-\newblock In {\em Proceedings of the 29th annual international ACM SIGIR
-  conference on Research and development in information retrieval}, pages
-  565--572. ACM, 2006.
+\newblock In {\em ACM. SIGIR}, 2006.
 
-\bibitem{kraft2007mashing}
-M.~A. Kraft.
-\newblock Mashing up the internet.
-\newblock {\em Medical Reference Services Quarterly}, 26(S1):191--207, 2007.
+\bibitem{friedland2010cybercasing}
+G.~Friedland and R.~Sommer.
+\newblock Cybercasing the joint: On the privacy implications of geo-tagging.
+\newblock In {\em USENIX. HotSec}, 2010.
+
+\bibitem{ghose2011estimating}
+A.~Ghose and P.~G. Ipeirotis.
+\newblock Estimating the helpfulness and economic impact of product reviews:
+  Mining text and reviewer characteristics.
+\newblock {\em IEEE TKDE}, 2011.
+
+\bibitem{goga2013exploiting}
+O.~Goga, H.~Lei, S.~H.~K. Parthasarathi, G.~Friedland, R.~Sommer, and
+  R.~Teixeira.
+\newblock Exploiting innocuous activity for correlating users across sites.
+\newblock In {\em ACM. WWW}, 2013.
+
+\bibitem{hecht2011tweets}
+B.~Hecht, L.~Hong, B.~Suh, and E.~H. Chi.
+\newblock Tweets from justin bieber's heart: the dynamics of the location field
+  in user profiles.
+\newblock In {\em ACM. SIGCHI Conference on Human Factors in Computing
+  Systems}, 2011.
+
+\bibitem{ivanova2013does}
+O.~Ivanova, M.~Scholz, and V.~Dorner.
+\newblock Does amazon scare off customers? the effect of negative spotlight
+  reviews on purchase intention.
+\newblock In {\em Wirtschaftsinformatik}, 2013.
+
+\bibitem{krishnamurthy2009leakage}
+B.~Krishnamurthy and C.~E. Wills.
+\newblock On the leakage of personally identifiable information via online
+  social networks.
+\newblock In {\em ACM COSN}, 2009.
 
 \bibitem{Lee:2010:USS:1835449.1835522}
 K.~Lee, J.~Caverlee, and S.~Webb.
 \newblock Uncovering social spammers: Social honeypots + machine learning.
-\newblock In {\em Proceedings of the 33rd International ACM SIGIR Conference on
-  Research and Development in Information Retrieval}, SIGIR '10, pages
-  435--442, New York, NY, USA, 2010. ACM.
+\newblock In {\em ACM. SIGIR}, 2010.
 
-\bibitem{pang2002thumbs}
-B.~Pang, L.~Lee, and S.~Vaithyanathan.
-\newblock Thumbs up: sentiment classification using machine learning
-  techniques.
-\newblock In {\em Proceedings of the ACL-02 conference on Empirical methods in
-  natural language processing-Volume 10}, pages 79--86. Association for
-  Computational Linguistics, 2002.
+\bibitem{li1998generalizing}
+H.~Li and N.~Abe.
+\newblock Generalizing case frames using a thesaurus and the mdl principle.
+\newblock {\em Computational linguistics}, 1998.
+
+\bibitem{mikians2012detecting}
+J.~Mikians, L.~Gyarmati, V.~Erramilli, and N.~Laoutaris.
+\newblock Detecting price and search discrimination on the internet.
+\newblock In {\em ACM HotNets}, 2012.
+
+\bibitem{narayanan2009anonymizing}
+A.~Narayanan and V.~Shmatikov.
+\newblock De-anonymizing social networks.
+\newblock In {\em IEEE Security \& Privacy}, 2009.
 
 \bibitem{toutanova2003feature}
 K.~Toutanova, D.~Klein, C.~D. Manning, and Y.~Singer.
 \newblock Feature-rich part-of-speech tagging with a cyclic dependency network.
-\newblock In {\em Proceedings of the 2003 Conference of the North American
-  Chapter of the Association for Computational Linguistics on Human Language
-  Technology-Volume 1}, pages 173--180. Association for Computational
-  Linguistics, 2003.
+\newblock In {\em ACL. NAALC}, 2003.
+
+\bibitem{traud2012social}
+A.~L. Traud, P.~J. Mucha, and M.~A. Porter.
+\newblock Social structure of facebook networks.
+\newblock {\em Elsevier. Physica A: Statistical Mechanics and its
+  Applications}, 2012.
+
+\bibitem{tsai2011effect}
+J.~Y. Tsai, S.~Egelman, L.~Cranor, and A.~Acquisti.
+\newblock The effect of online privacy information on purchasing behavior: An
+  experimental study.
+\newblock {\em INFORMS Information Systems Research}, 2011.
+
+\bibitem{veras2014semantic}
+R.~Veras, C.~Collins, and J.~Thorpe.
+\newblock On the semantic patterns of passwords and their security impact.
+\newblock In {\em NDSS}, 2014.
+
+\bibitem{wondracek2010practical}
+G.~Wondracek, T.~Holz, E.~Kirda, and C.~Kruegel.
+\newblock A practical attack to de-anonymize social network users.
+\newblock In {\em IEEE Security \& Privacy}, 2010.
 
 \end{thebibliography}
