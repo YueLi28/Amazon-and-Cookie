@@ -10,3 +10,37 @@ Expected results could be:
 * E-mail or cell phone recovery are the most popular recovery methods, thus producing single point of failures.
 * The security question scheme (which is proven to be insecure) is still popular.
 * Websites may use multiple ways to recover the passwords.
+
+###Update after 9/3 meeting
+__Outline__:
+1. A large-scale study on how password recovery mechanisms are implemented in present websites.
+2. Study how the email addresses are important to users (it is like a password manager, single point of failure).
+3. A user study to show the importance of email is underestimated
+4. Discuss alternative methods
+
+###A sample table for what will be recorded in a website
+
+==functionality==
+
+| Website        | Allow login? | Allow Recovery?|
+| ------------- |:-------------:|:---:|
+| www.google.com | y|y|
+(Record`login page`)
+
+==login name==
+
+| Username      | Assigned ID | Email Address| Single Sign On |
+| ------------- |:-------------:|:---:|:---:|
+|y|n|y|y
+(Record `page` that shows such info)
+
+==pwd recovery==
+
+|Email| Cell Phone | Security Question |Others?| combined?|
+|:---:|:---:|:---:|:---:|:---:|
+|link, code, password?| link, code, password?| provided?|specify| email+cell
+
+(Record `recovery page` of each method)
+
+
+
