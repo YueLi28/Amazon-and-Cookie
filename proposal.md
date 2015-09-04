@@ -38,7 +38,7 @@ __Outline__:
 
 |Email| Cell Phone | Security Question |Others?| combined?|
 |:---:|:---:|:---:|:---:|:---:|
-|link, code, password?| link, code, password?| provided?|specify| email+cell
+|link, code, password?| link, code, password?| provided? sensitive or private?|specify| email+cell
 
 (Record `recovery page` of each method)
 
