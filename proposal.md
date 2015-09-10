@@ -18,29 +18,83 @@ __Outline__:
 3. A user study to show the importance of email is underestimated
 4. Discuss alternative methods
 
+###Human Subject Experiment (<a href = "https://cups.cs.cmu.edu/soups/2010/howtosoups.pdf"> human subject experiment[https://cups.cs.cmu.edu/soups/2010/howtosoups.pdf] </a>.)
+
+
 ###A sample table for what will be recorded in a website
 
 ==functionality==
 
 | Website        | Allow login? | Allow Recovery?|
 | ------------- |:-------------:|:---:|
-| www.google.com | y|y|
+| www.yahoo.com | y|y|
 (Record`login page`)
 
 ==login name==
 
 | Username      | Assigned ID | Email Address| Single Sign On |
 | ------------- |:-------------:|:---:|:---:|
-|y|n|y|y
+|y|n|y|n
 (Record `page` that shows such info)
 
 ==pwd recovery==
 
+|Email| Cell Phone | Security Question |Others?| combined?|extra?|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|link, code, password?| link, code, password?| provided? sensitive or private?|specify| email+cell | email|
+
 |Email| Cell Phone | Security Question |Others?| combined?|
 |:---:|:---:|:---:|:---:|:---:|
-|link, code, password?| link, code, password?| provided? sensitive or private?|specify| email+cell
+|n| code| n | customer service | n
 
 (Record `recovery page` of each method)
+
+How does present system implement password recovery
+
+* Default recovery method: The ones that are mentioned in account registration
+* Extra recovery method: The ones that can be added after registration (while not mentioned in registration).
+* Email vs Cellphone vs Security Questions
+
+
+Yun, born in Taibei, live in San Francisco 94101
+__eyny.com__
+
+==functionality==
+
+|rk| Website        | region| login |extra login| recovery | extra recovery| Memo|
+|:---:| ------------- |:----:|:---------:|:---:|:---:|:---:|:---:|:---:|
+|500| www.eyny.com | Taiwan | un | sq(2) | em(c) | no | 台北
+|499| www.myway.com | US | un | no | em(n)/ht | no | 台北
+|498| www.kinogo.co | Russia | cannot register | cannot read russian 
+|497|realtor.com | US | em | FB | em(c) | no
+|496|freegameszonetab.com | India | no |||||
+|495|slack.com | US| em | sms(2)/app(2) | em(c) | em+sms | malfunctioned?|
+|494|www.wunderground.com/| US | em/un | no | em(c) | no | email can be changed
+|493|people.com| US | em | no | em(c) | no | needs credit card to sign-up
+|492|albawabhnews.com| egypt | no
+|491|shopclues.com| India | em |FB/G+| em(c) |no | sent the pwd in registration email|
+|490|scribd.com| India | em/un | FB | em(c) | no |
+|489|free.fr| France | ||||No login for non-subscriber
+|488|naukri.com | India | em | no | em (c)| no | 
+|487|gmarket.co.kr| South Korea | un | no | em(c) | ahyipin | Seems like a korean tool
+|486|gamefaqs.com| US | em/un | no | em(c) | no |
+|485|shopify.com| US | em | sms(2)/app(2)/code| em(c)| no |
+|484|ancestry.com| US | em/un | FB | em(c) | no | 
+|483| tabelog.com| Japan | em | FB/TT/G+ | em(c) | no | cannot read japanese
+|482 | souq.com | Egypt | em/un | FB | em(c) | no
+|481 | webssearches.com | brazil | no |
+|480 | nyaa.se | Japan | un/em/ui | no | em(c) | no |
+|479 | liputan6.com | Indonesia | em | FB | em(c) | no| 
+|478 |techcrunch.com| US | no | FB/TT/LI / no | no |
+| 477 | asos.com | US | em | FB/TT/G+ | em | no
+| 476 | wow.com | US | no
+
+
+
+
+
+
+
 
 
 
